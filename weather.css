@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(8, 218, 162), rgb(8, 218, 162), rgb(80, 80, 241));
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    
+    .searchArea {
+        width: 100%;
+        height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        input {
+            width: 60vw;
+            height: 50px;
+            border-radius: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 24px;
+        }
+
+        #i {
+            margin-left: 10px;
+            cursor: pointer;
+            width: 66px;
+            height: 74px;
+        }
+    }
+    .error{
+        
+    p{
+        color:red;
+        text-align: center;
+        font-size: 23px;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+    }
+    .imgdiv {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 180px;
+
+        .img {
+            display: flex;
+            justify-content: center;
+            width: 230px;
+            height: 100%;
+            object-fit:cover;
+        }
+    }
+    .temp{
+        margin-top: 2vh;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h1{
+            padding-top: 10px;
+            font-size: 120px;
+            font-family:monospace;
+        }
+        h2{
+
+            font-size: 40px;
+        }
+    }
+    .wUpdate{
+        margin-top: 2vh;
+        display: flex;
+        justify-content: space-evenly;
+        .wind{
+            /* width: 30px; */
+            display: flex;
+            margin-left: 20px;
+            .air{
+                width: 63px;
+                height: 78px;              
+            }
+        }
+        .text{
+
+            h3{
+                font-size:48px;
+            }
+            h2{
+                font-size: 35px;
+            }
+        }
+    }
+}
+/* display none  Properties*/
+
+.weatherMenu{
+    display: none;
+}
+.error{
+    display: none;
+}
